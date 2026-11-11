@@ -1,0 +1,25 @@
+{
+ "selected_year_per_month": {
+  "1": 2015,
+  "2": 2024,
+  "3": 2018,
+  "4": 2020,
+  "5": 2018,
+  "6": 2017,
+  "7": 2021,
+  "8": 2021,
+  "9": 2024,
+  "10": 2019,
+  "11": 2023,
+  "12": 2021
+ },
+ "method": "per-month year closest to 10-yr mean GHI (simplified TMY-style)",
+ "source_years": [
+  2015,
+  2024
+ ],
+ "interval_offset_min": 30,
+ "annual_ghi_kwh_m2": 1946.2721600000002,
+ "annual_dni_kwh_m2": 1172.26241,
+ "annual_dhi_kwh_m2": 919.56364
+}
