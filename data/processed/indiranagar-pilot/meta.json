@@ -1,0 +1,133 @@
+{
+ "area_id": "indiranagar-pilot",
+ "name": "Indiranagar\u2013Domlur pilot",
+ "bbox": [
+  77.634,
+  12.973,
+  77.647,
+  12.986
+ ],
+ "bbox_area_km2": 2.0284540546503065,
+ "pipeline_version": "1",
+ "generated": "2026-11-11T05:53:54Z",
+ "seconds": 436.4,
+ "n_buildings_analysed": 3864,
+ "n_obstacle_buildings": 5661,
+ "n_tree_patches": 4655,
+ "cache_hits": 0,
+ "quality_counts": {
+  "measured": 0,
+  "estimated": 3009,
+  "unverified": 855
+ },
+ "height_source_counts": {
+  "open_buildings_2.5d_temporal_2023": 2991,
+  "neighbourhood_fallback": 744,
+  "levels_x_3m": 121,
+  "mapped_height_attribute": 8
+ },
+ "qa": {
+  "footprints": {
+   "overture_rows_in_padded_bbox": 5661,
+   "after_validity_and_size_filter": 5661,
+   "duplicates_removed_iou_gt_0.5": 0,
+   "overlap_flagged_iou_0.1_0.5": 4
+  },
+  "cross_check": {
+   "open_buildings_v3": {
+    "polygons_conf>=0.70_in_study": 4305,
+    "not_in_overture_>=15m2": 117,
+    "share_of_overture_with_ob3_overlap": 0.92675983436853
+   },
+   "osm_direct": "unavailable"
+  },
+  "heights": {
+   "status": "ok",
+   "buildings_with_raster_height": 4960,
+   "median_raster_height_m": 6.5
+  },
+  "trees": {
+   "source": "Meta/WRI Global Canopy Height Map v1 (1.2 m, ~2018-2020 vintage)",
+   "status": "ok",
+   "pixels_ge_3m_total": 585724,
+   "pixels_excluded_inside_buildings": 99994,
+   "pixels_excluded_height_gt_35m_artefact": 0,
+   "patches_kept": 4655,
+   "patches_dropped_lt_6m2": "applied",
+   "class_mean_heights_m": {
+    "1": 4.0,
+    "2": 7.5,
+    "3": 11.6,
+    "4": 16.8
+   }
+  },
+  "possible_missing_structures": 117
+ },
+ "pv_assumptions": {
+  "tilt_deg": 12.0,
+  "azimuth_deg": 180.0,
+  "albedo": 0.2,
+  "module_wp": 540.0,
+  "module_area_m2": 2.583,
+  "layout_efficiency": 0.65,
+  "gamma_pdc": -0.0035,
+  "temperature_model": "open_rack_glass_polymer",
+  "dc_ac_ratio": 1.15,
+  "inverter_efficiency": 0.97,
+  "iam_b": 0.05,
+  "soiling": 3.0,
+  "mismatch": 2.0,
+  "wiring": 2.0,
+  "connections": 0.5,
+  "lid": 1.5,
+  "nameplate_rating": 1.0,
+  "availability": 2.0,
+  "tree_opacity": 0.7,
+  "max_shadow_m": 150.0,
+  "min_sun_elevation_deg": 3.0,
+  "cell_size_m": 1.0,
+  "roof_setback_m": 0.5,
+  "max_cells_per_roof": 400,
+  "module_efficiency": 0.20905923344947736,
+  "roof_area_per_kwp": 7.358974358974359
+ },
+ "typical_year": {
+  "selected_year_per_month": {
+   "1": 2015,
+   "2": 2024,
+   "3": 2018,
+   "4": 2020,
+   "5": 2018,
+   "6": 2017,
+   "7": 2021,
+   "8": 2021,
+   "9": 2024,
+   "10": 2019,
+   "11": 2023,
+   "12": 2021
+  },
+  "method": "per-month year closest to 10-yr mean GHI (simplified TMY-style)",
+  "source_years": [
+   2015,
+   2024
+  ],
+  "interval_offset_min": 30,
+  "annual_ghi_kwh_m2": 1946.2721600000002,
+  "annual_dni_kwh_m2": 1172.26241,
+  "annual_dhi_kwh_m2": 919.56364
+ },
+ "unshaded_kwh_per_kwp": 1578.0588621581132,
+ "poa_kwh_m2": 1984.2915778641034,
+ "closure_factor_mean": 0.9996478134195095,
+ "height_model": {
+  "calibrated": false,
+  "reason": "no field measurements supplied"
+ },
+ "datasets": {
+  "overture_release": "2026-10-21.0",
+  "open_buildings_v3": "v3 polygons (S2 level 6)",
+  "open_buildings_temporal": "v1 2023-06-30",
+  "canopy_height": "Meta/WRI v1 (alsgedi_global_v6_float)",
+  "nasa_power": "hourly 2015-2024 (MERRA-2/CERES)"
+ }
+}

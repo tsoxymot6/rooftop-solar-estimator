@@ -1,0 +1,138 @@
+{
+ "area_id": "kumaraswamy-layout",
+ "name": "Kumaraswamy Layout pilot",
+ "bbox": [
+  77.5529,
+  12.9002,
+  77.5661,
+  12.9132
+ ],
+ "bbox_area_km2": 2.060247267769337,
+ "pipeline_version": "1",
+ "generated": "2026-11-11T08:26:14Z",
+ "seconds": 134.3,
+ "n_buildings_analysed": 7965,
+ "n_obstacle_buildings": 10939,
+ "n_tree_patches": 985,
+ "cache_hits": 0,
+ "quality_counts": {
+  "measured": 0,
+  "estimated": 6082,
+  "unverified": 1883
+ },
+ "height_source_counts": {
+  "open_buildings_2.5d_temporal_2023": 6084,
+  "neighbourhood_fallback": 1879,
+  "levels_x_3m": 2
+ },
+ "qa": {
+  "footprints": {
+   "overture_rows_in_padded_bbox": 10939,
+   "after_validity_and_size_filter": 10939,
+   "duplicates_removed_iou_gt_0.5": 0,
+   "overlap_flagged_iou_0.1_0.5": 2
+  },
+  "cross_check": {
+   "open_buildings_v3": {
+    "polygons_conf>=0.70_in_study": 9023,
+    "not_in_overture_>=15m2": 394,
+    "share_of_overture_with_ob3_overlap": 0.9532956685499059
+   },
+   "osm_direct": "no buildings returned"
+  },
+  "heights": {
+   "status": "ok",
+   "buildings_with_raster_height": 10269,
+   "median_raster_height_m": 7.0
+  },
+  "trees": {
+   "source": "Meta/WRI Global Canopy Height Map v1 (1.2 m, ~2018-2020 vintage)",
+   "status": "ok",
+   "pixels_ge_3m_total": 69052,
+   "pixels_excluded_inside_buildings": 11914,
+   "pixels_excluded_height_gt_35m_artefact": 0,
+   "patches_kept": 985,
+   "patches_dropped_lt_6m2": "applied",
+   "class_mean_heights_m": {
+    "1": 3.8,
+    "2": 7.1,
+    "3": 11.5,
+    "4": 17.6
+   },
+   "second_pass_osm_tree_nodes": {
+    "mapped_trees": 4,
+    "supported_by_canopy_height": 0,
+    "unsupported_flagged_unverified": 4,
+    "note": "OSM tree points are never used as shadow casters without canopy support (position/height unreliable)"
+   }
+  },
+  "possible_missing_structures": 394
+ },
+ "pv_assumptions": {
+  "tilt_deg": 12.0,
+  "azimuth_deg": 180.0,
+  "albedo": 0.2,
+  "module_wp": 540.0,
+  "module_area_m2": 2.583,
+  "layout_efficiency": 0.65,
+  "gamma_pdc": -0.0035,
+  "temperature_model": "open_rack_glass_polymer",
+  "dc_ac_ratio": 1.15,
+  "inverter_efficiency": 0.97,
+  "iam_b": 0.05,
+  "soiling": 3.0,
+  "mismatch": 2.0,
+  "wiring": 2.0,
+  "connections": 0.5,
+  "lid": 1.5,
+  "nameplate_rating": 1.0,
+  "availability": 2.0,
+  "tree_opacity": 0.7,
+  "max_shadow_m": 150.0,
+  "min_sun_elevation_deg": 3.0,
+  "cell_size_m": 1.0,
+  "roof_setback_m": 0.5,
+  "max_cells_per_roof": 400,
+  "module_efficiency": 0.20905923344947736,
+  "roof_area_per_kwp": 7.358974358974359
+ },
+ "typical_year": {
+  "selected_year_per_month": {
+   "1": 2015,
+   "2": 2024,
+   "3": 2018,
+   "4": 2020,
+   "5": 2018,
+   "6": 2017,
+   "7": 2021,
+   "8": 2021,
+   "9": 2024,
+   "10": 2019,
+   "11": 2023,
+   "12": 2021
+  },
+  "method": "per-month year closest to 10-yr mean GHI (simplified TMY-style)",
+  "source_years": [
+   2015,
+   2024
+  ],
+  "interval_offset_min": 30,
+  "annual_ghi_kwh_m2": 1946.2721600000002,
+  "annual_dni_kwh_m2": 1172.26241,
+  "annual_dhi_kwh_m2": 919.56364
+ },
+ "unshaded_kwh_per_kwp": 1578.0588621581132,
+ "poa_kwh_m2": 1984.2915778641034,
+ "closure_factor_mean": 0.9996478134195095,
+ "height_model": {
+  "calibrated": false,
+  "reason": "no field measurements supplied"
+ },
+ "datasets": {
+  "overture_release": "2026-10-21.0",
+  "open_buildings_v3": "v3 polygons (S2 level 6)",
+  "open_buildings_temporal": "v1 2023-06-30",
+  "canopy_height": "Meta/WRI v1 (alsgedi_global_v6_float)",
+  "nasa_power": "hourly 2015-2024 (MERRA-2/CERES)"
+ }
+}
